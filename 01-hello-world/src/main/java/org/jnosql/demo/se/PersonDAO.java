@@ -3,7 +3,6 @@ package org.jnosql.demo.se;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -49,6 +48,7 @@ public class PersonDAO {
             statement.execute();
         }
     }
+
     public List<Person> findAll() throws SQLException {
         List<Person> people = new ArrayList<>();
         try(Connection connection = createConnection()) {
