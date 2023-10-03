@@ -11,6 +11,13 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>cdata.jdbc.harperdb</groupId>
+            <artifactId>cdata.jdbc.harperdb</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${project.basedir}/lib/cdata.jdbc.harperdb.jar</systemPath>
+        </dependency>
     </dependencies>
 
 </project>
