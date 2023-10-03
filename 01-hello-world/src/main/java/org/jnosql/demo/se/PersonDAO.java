@@ -29,9 +29,10 @@ public class PersonDAO {
             var statement = connection.prepareStatement(SELECT);
             var resultSet = statement.executeQuery();
             while (resultSet.next()) {
+                var id = resultSet.getString("id");
                 var name = resultSet.getString("name");
                 var age = resultSet.getInt("age");
-                people.add(new Person(name, age));
+                people.add(new Person(id, name, age));
             }
         }
         return people;
