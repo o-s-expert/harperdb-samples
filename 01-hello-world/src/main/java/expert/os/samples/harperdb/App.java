@@ -1,5 +1,5 @@
 
-package org.jnosql.demo.se;
+package expert.os.samples.harperdb;
 
 
 import java.sql.SQLException;

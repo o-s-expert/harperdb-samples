@@ -1,4 +1,4 @@
-package org.jnosql.demo.se;
+package expert.os.samples.harperdb;
 
 public record Person(String id, String name, Integer age) {
 
