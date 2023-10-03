@@ -5,8 +5,8 @@
     <name>01-hello-world</name>
 
     <parent>
-    <groupId>expert.os.samples.harperdb</groupId>
-    <artifactId>parent</artifactId>
+        <groupId>expert.os.samples.harperdb</groupId>
+        <artifactId>parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
