@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Properties;
 
 public class PersonDAO {
@@ -13,13 +14,38 @@ public class PersonDAO {
 
     private static final String INSERT = "INSERT INTO dev.person (name, age) VALUES (?, ?)";
     private static final String SELECT = "select * From dev.person";
-    private static final String CREATE_TABLE = "CREATE TABLE Person (name VARCHAR(20), age INT)";
+
+    private static final String FIND_ID = "select * From dev.person where id = ?";
+
+    private static final String DELETE = "delete From dev.person where id = ?";
 
     public void insert(Person person) throws SQLException {
         try(Connection connection = createConnection()){
             var statement = connection.prepareStatement(INSERT);
             statement.setString(1, person.name());
             statement.setInt(2, person.age());
+            statement.execute();
+        }
+    }
+
+    public Optional<Person> findById(String id) throws SQLException {
+        try(Connection connection = createConnection()) {
+            var statement = connection.prepareStatement(FIND_ID);
+            statement.setString(1, id);
+            var resultSet = statement.executeQuery();
+            if(resultSet.next()) {
+                var name = resultSet.getString("name");
+                var age = resultSet.getInt("age");
+                return Optional.of(new Person(id, name, age));
+            }
+            return Optional.empty();
+        }
+    }
+
+    public void delete(String id) throws SQLException {
+        try(Connection connection = createConnection()) {
+            var statement = connection.prepareStatement(DELETE);
+            statement.setString(1, id);
             statement.execute();
         }
     }
@@ -36,15 +62,6 @@ public class PersonDAO {
             }
         }
         return people;
-    }
-
-    public void create() {
-        try(Connection connection = createConnection();
-            Statement statement = connection.createStatement()) {
-            statement.execute(CREATE_TABLE);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     static Connection createConnection() throws SQLException {
