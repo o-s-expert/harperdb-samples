@@ -6,7 +6,7 @@
 
 == Overview
 
-This repository contains multiple Java projects that demonstrate how to integrate HarperDB with different Java frameworks, including Quarkus, Micronaut, and Spring. You can choose to use the cloud-based HarperDB solution at [HarperDB Cloud](https://studio.harperdb.io/sign-up) or run it locally using Docker.
+This repository contains multiple Java projects that demonstrate how to integrate HarperDB with different Java frameworks, including Quarkus, Micronaut, and Spring. You can choose to use the cloud-based HarperDB solution at link:https://studio.harperdb.io/sign-up[HarperDB Cloud] or run it locally using Docker.
 
 To run HarperDB locally with Docker, execute the following command:
 
@@ -25,7 +25,7 @@ docker run -d \
 
 Follow these steps to set up and run the projects:
 
-1. **Install Maven:** If you don't have Maven installed, you can download it from [Maven Apache](https://maven.apache.org/download.cgi) and follow the installation instructions.
+1. **Install Maven:** If you don't have Maven installed, you can download it from link:https://maven.apache.org/download.cgi[Maven Apache] and follow the installation instructions.
 
 2. **Clone the Repository:**
 
@@ -41,7 +41,7 @@ cd harperdb-samples
 
 4. **Configure HarperDB:**
 
-- If you are using HarperDB Cloud, sign up for an account at [HarperDB Cloud](https://studio.harperdb.io/sign-up) and obtain your API credentials.
+- If you are using HarperDB Cloud, sign up for an account at link:https://studio.harperdb.io/sign-up[HarperDB Cloud] and obtain your API credentials.
 - If you are running HarperDB locally with Docker, ensure Docker is running with the provided configuration.
 
 5. **Update Configuration:**
@@ -62,8 +62,8 @@ mvn quarkus:dev
 
 == Resources
 
-- HarperDB Documentation: [HarperDB Documentation](https://docs.harperdb.io/docs/)
-- HarperDB API Documentation: [HarperDB API](https://api.harperdb.io/)
+- HarperDB Documentation: link:https://docs.harperdb.io/docs/[HarperDB Documentation]
+- HarperDB API Documentation: link:https://api.harperdb.io/[HarperDB API]
 
 Feel free to explore the provided sample code, customize it for your use cases, and leverage HarperDB's capabilities to build modern and efficient Java applications with different frameworks.
 
@@ -71,5 +71,5 @@ For detailed usage and integration instructions, refer to the documentation link
 
 == License
 
-This project is licensed under the [Apache License 2.0](link-license).
+This project is licensed under the link:https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0].
 
