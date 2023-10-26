@@ -52,10 +52,7 @@ cd harperdb-samples
 
 [source,bash]
 ----
-# For each Java project (e.g., quarkus-project, micronaut-project, spring-project)
-cd quarkus-project
 mvn clean install
-mvn quarkus:dev
 ----
 
 * **Access the Applications:** Open your web browser and navigate to the respective application endpoints to interact with each Java project.
@@ -68,6 +65,11 @@ mvn quarkus:dev
 Feel free to explore the provided sample code, customize it for your use cases, and leverage HarperDB's capabilities to build modern and efficient Java applications with different frameworks.
 
 For detailed usage and integration instructions, refer to the documentation links provided above.
+
+
+=== Projects
+
+* link:01-hello-world/[01 Hello World]: A simple Java application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
 
 == License
 
