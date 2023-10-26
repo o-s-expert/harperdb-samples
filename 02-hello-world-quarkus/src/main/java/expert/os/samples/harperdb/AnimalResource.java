@@ -11,7 +11,7 @@ import jakarta.ws.rs.core.MediaType;
 
 import java.util.List;
 
-@Path("/hello")
+@Path("/animals")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class AnimalResource {
@@ -39,5 +39,11 @@ public class AnimalResource {
     @Path("{id}")
     public void delete(@PathParam("id") String id){
         this.service.delete(id);
+    }
+
+    @POST
+    @Path("/generate")
+    public void generateRandom(){
+        this.service.generateRandom();
     }
 }
