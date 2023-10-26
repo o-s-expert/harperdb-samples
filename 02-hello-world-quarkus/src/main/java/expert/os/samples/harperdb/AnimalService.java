@@ -34,7 +34,7 @@ public class AnimalService {
     }
 
     public void generateRandom(){
-        for (int index = 0; index < 1_000; index++) {
+        for (int index = 0; index < 10; index++) {
             var animal = Animal.of(faker);
             dao.insert(animal);
         }

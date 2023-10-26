@@ -1,13 +1,12 @@
 package expert.os.samples.harperdb;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List
+import java.util.List;
 import java.util.Optional;
 
 @ApplicationScoped
