@@ -4,44 +4,39 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import net.datafaker.Faker;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @ApplicationScoped
 public class AnimalService {
 
     private final Faker faker;
 
-    private final Map<String, Animal> animals;
+    private final AnimalDAO dao;
 
     @Inject
-    public AnimalService(Faker faker) {
+    public AnimalService(Faker faker, AnimalDAO dao) {
         this.faker = faker;
-        this.animals = new HashMap<>();
+        this.dao = dao;
     }
 
 
     public void insert(Animal animal){
-        animals.put(animal.scientificName(), animal);
+      this.dao.insert(animal);
     }
 
-    public void update(Animal animal){
-        animals.put(animal.scientificName(), animal);
-    }
 
     public void delete(String scientificName){
-        animals.remove(scientificName);
+        this.dao.delete(scientificName);
     }
 
     public List<Animal> findAll(){
-        return List.copyOf(animals.values());
+        return dao.findAll();
     }
 
     public void generateRandom(){
         for (int index = 0; index < 1_000; index++) {
             var animal = Animal.of(faker);
-            animals.put(animal.scientificName(), animal);
+            dao.insert(animal);
         }
     }
 
