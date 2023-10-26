@@ -49,6 +49,13 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cdata.jdbc.harperdb</groupId>
+            <artifactId>cdata.jdbc.harperdb</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${project.basedir}/lib/cdata.jdbc.harperdb.jar</systemPath>
+        </dependency>
       <dependency>
         <groupId>net.datafaker</groupId>
         <artifactId>datafaker</artifactId>
