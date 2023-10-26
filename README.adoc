@@ -25,9 +25,9 @@ docker run -d \
 
 Follow these steps to set up and run the projects:
 
-1. **Install Maven:** If you don't have Maven installed, you can download it from link:https://maven.apache.org/download.cgi[Maven Apache] and follow the installation instructions.
+* **Install Maven:** If you don't have Maven installed, you can download it from link:https://maven.apache.org/download.cgi[Maven Apache] and follow the installation instructions.
 
-2. **Clone the Repository:**
+* **Clone the Repository:**
 
 [source,bash]
 ----
@@ -35,20 +35,20 @@ git clone <repository_url>
 cd harperdb-samples
 ----
 
-3. **Choose a Project:**
+* **Choose a Project:**
 
 - Navigate to the subdirectories (e.g., `quarkus-project`, `micronaut-project`, `spring-project`) for the Java framework you want to explore.
 
-4. **Configure HarperDB:**
+* **Configure HarperDB:**
 
 - If you are using HarperDB Cloud, sign up for an account at link:https://studio.harperdb.io/sign-up[HarperDB Cloud] and obtain your API credentials.
 - If you are running HarperDB locally with Docker, ensure Docker is running with the provided configuration.
 
-5. **Update Configuration:**
+* **Update Configuration:**
 
 - Open the relevant configuration files in the selected Java project (e.g., `application.properties`, `harperdb.properties`) and configure your HarperDB connection details.
 
-6. **Build and Run:**
+* **Build and Run:**
 
 [source,bash]
 ----
@@ -58,7 +58,7 @@ mvn clean install
 mvn quarkus:dev
 ----
 
-7. **Access the Applications:** Open your web browser and navigate to the respective application endpoints to interact with each Java project.
+* **Access the Applications:** Open your web browser and navigate to the respective application endpoints to interact with each Java project.
 
 == Resources
 
