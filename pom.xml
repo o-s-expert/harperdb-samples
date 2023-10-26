@@ -31,6 +31,7 @@
 
     <modules>
         <module>01-hello-world</module>
+        <module>02-hello-world-quarkus</module>
     </modules>
 
     <dependencies>
