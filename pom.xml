@@ -30,8 +30,8 @@
     </properties>
 
     <modules>
-        <module>01-hello-world</module>
-        <module>02-hello-world-quarkus</module>
+        <module>01-hello-world-sql</module>
+        <module>02-hello-world-quarkus-sql</module>
     </modules>
 
     <dependencies>
