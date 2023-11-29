@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>expert.os.harpderdb</groupId>
-            <artifactId>harpderdb-parent</artifactId>
+            <artifactId>harpderdb-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
