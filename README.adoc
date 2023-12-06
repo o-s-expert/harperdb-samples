@@ -74,11 +74,11 @@ For detailed usage and integration instructions, refer to the documentation link
 
 | link:01-hello-world-sql/[01 Hello World]
 | A simple Java application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
-| [Link to Article]
+| link:https://dzone.com/articles/harperdb-java-hello-world[Article]
 
 | link:02-hello-world-quarkus-sql/[02 Hello World Quarkus]
 | A simple Quarkus application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
-| [Link to Article]
+| link:https://dzone.com/articles/harness-the-power-of-quarkus-and-harperdb-for-effi[Article]
 |===
 
 
