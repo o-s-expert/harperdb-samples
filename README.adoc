@@ -69,8 +69,18 @@ For detailed usage and integration instructions, refer to the documentation link
 
 === Projects
 
-* link:01-hello-world-sql/[01 Hello World]: A simple Java application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
-* link:02-hello-world-quarkus-sql/[02 Hello World Quarkus]: A simple Quarkus application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
+|===
+| Folder | Description | Article Link
+
+| link:01-hello-world-sql/[01 Hello World]
+| A simple Java application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
+| [Link to Article]
+
+| link:02-hello-world-quarkus-sql/[02 Hello World Quarkus]
+| A simple Quarkus application that demonstrates how to connect to HarperDB and perform basic CRUD operations.
+| [Link to Article]
+|===
+
 
 == License
 
