@@ -8,8 +8,8 @@ import java.util.List;
 @RestController
 public class PokemonController {
 
-    @GetMapping("/employees")
-    List<String> all() {
-        return List.of("Pikachu", "Charmander", "Bulbasaur");
+    @GetMapping("/pokemon")
+    List<String> findById(String id) {
+
     }
 }

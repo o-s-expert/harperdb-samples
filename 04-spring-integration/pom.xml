@@ -22,11 +22,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>net.datafaker</groupId>
-			<artifactId>datafaker</artifactId>
-			<version>2.0.2</version>
-		</dependency>
-		<dependency>
 			<groupId>expert.os.harpderdb</groupId>
 			<artifactId>harpderdb-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
