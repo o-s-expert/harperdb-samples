@@ -20,7 +20,7 @@ public class PokemonController {
 
     @GetMapping("/pokemons/{id}")
     Pokemon findById(@PathVariable String id) {
-        return service.findById(id).orElseThrow();
+        return service.findById(id).orElseThrow(() -> new PokemonNotFoundException(id));
     }
 
     @PutMapping("/pokemons")
