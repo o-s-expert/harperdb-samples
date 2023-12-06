@@ -20,8 +20,8 @@ public class PokemonService {
         return template.findById(Pokemon.class, id);
     }
 
-    public void insert(Pokemon pokemon) {
-        template.insert(pokemon);
+    public void save(Pokemon pokemon) {
+        template.upsert(pokemon);
     }
     public void delete(String id) {
         template.delete(Pokemon.class, id);
