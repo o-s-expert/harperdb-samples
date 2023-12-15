@@ -12,7 +12,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>expert.os.harpderdb</groupId>
+            <groupId>io.harperdb</groupId>
             <artifactId>harpderdb-core</artifactId>
             <version>0.0.1</version>
         </dependency>

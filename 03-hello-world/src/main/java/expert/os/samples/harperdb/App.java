@@ -2,9 +2,9 @@
 package expert.os.samples.harperdb;
 
 
-import expert.os.harperdb.Server;
-import expert.os.harperdb.ServerBuilder;
-import expert.os.harperdb.Template;
+import io.harperdb.core.Server;
+import io.harperdb.core.ServerBuilder;
+import io.harperdb.core.Template;
 import net.datafaker.Faker;
 
 

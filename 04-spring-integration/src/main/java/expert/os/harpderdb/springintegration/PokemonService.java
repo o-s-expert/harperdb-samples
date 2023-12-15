@@ -1,6 +1,6 @@
 package expert.os.harpderdb.springintegration;
 
-import expert.os.harperdb.Template;
+import io.harperdb.core.Template;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
